@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Andhika Portfolio</title>
+  <link rel="icon" href="logo-removebg-preview.png" type="image/x-icon">  <link rel="icon" href="logo-removebg-preview.png" type="image/png">    <link rel="icon" href="logo-removebg-preview.png" type="image/svg+xml"> <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles2.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+  <div id="app" class="light">
+    <header class="header">
+    <h1 class="logo">Andhika</h1>
+    <div class="header-actions">  <button id="toggleMode" class="mode-toggle" aria-label="Toggle Dark/Light Mode">🌙</button>
+        <button id="menuToggle" class="menu-toggle" aria-label="Toggle Menu">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+    <div class="nav-wrapper">
+        <nav class="nav-links">
+            <a href="#" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About Me</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#archived" class="nav-link">Archived</a>
+            <a href="#contact" class="nav-link">Contact Me</a>
+        </nav>
+    </div>
+</header>
+
+    <main class="main-content">
+      <section class="home-section section animate" id="home">  <div class="home-container">
+          <img src="profile.jpg"
+     srcset="profile.jpg 320w, profile.jpg 600w, profile.jpg 1200w"
+     alt="profile-img" class="profile-img" />
+          <div class="home-text-container">
+            <h2 class="home-title">Welcome</h2>
+            <p class="home-subtitle">Hi, I'm Andhika Maulana<br />| Network Engineer |</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section animate" id="about">  <h2>About Me</h2>
+        <div class="about-container">
+          <img src="foto andhika.jpg"
+     srcset="foto andhika.jpg 320w, foto andhika.jpg 600w, foto andhika.jpg 1200w"
+     alt="foto andhika" class="about-img" />
+          <div class="info-card-container">
+            <div class="info-card">
+              <i class="fas fa-school"></i>
+              <div>
+                <h4>Education</h4>
+                <p>SMK Negeri 1 Seyegan<br>TKJ Department - Graduated 2025</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <i class="fas fa-award"></i>
+              <div>
+                <h4>Competition</h4>
+                <p>LKS 2024 Cloud Computing AWS<br>Olimpiade Mikrotik Finalis (9/349)</p>
+              </div>
+            </div>
+          </div>
+          <div className="bg-[#1a1a1d] p-6 rounded-xl shadow-md col-span-1 md:col-span-2">
+            <div className="flex items-center gap-4 mb-2">
+              <FaUserGraduate className="text-blue-500 text-2xl" />
+              <h3 className="text-lg font-semibold">Description</h3>
+            </div>
+            <p className="text-sm text-gray-300">
+              I am a graduate of SMK Negeri 1 Seyegan in the field of TKJ (Computer and Network Engineering) in 2025.<br />
+              I have experience competing at regional and national levels.<br />
+              The regional competition is LKS 2024 Cloud Computing AWS,<br />
+              and the national level Mikrotik and Network Olympics which reached the final round,<br />
+               9th place out of 349 participants throughout Indonesia.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section animate" id="experience">  <h2>Experience</h2>
+        <div class="experience-container">
+          <div class="experience-box software">
+            <h3>Software</h3>
+            <ul>
+              <li><span></span>HTML & CSS <small>Basic</small></li>
+              <li><span></span>RouterOS Configuration <small>Intermediate</small></li>
+              <li><span></span>Bandwidth Management <small>Intermediate</small></li>
+              <li><span></span>MikroTik Firewall <small>Intermediate</small></li>
+            </ul>
+          </div>
+          <div class="experience-box hardware">
+            <h3>Hardware</h3>
+            <ul>
+              <li><span></span>Fiber Optic <small>Intermediate</small></li>
+              <li><span></span>Cabling <small>Intermediate</small></li>
+              <li><span></span>Fiber Maintenance <small>Intermediate</small></li>
+              <li><span></span>Splicing <small>Intermediate</small></li>
+              <li><span></span>PC Maintenance <small>Intermediate</small></li>
+              <li><span></span>UTP Crimping <small>Advanced</small></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section animate" id="archived">  <h2>Archived</h2>
+        <div class="archived-gallery">
+          <div class="archived-item">
+            <img src="sertifikat ojm finalis.jpg"
+     srcset="sertifikat ojm finalis.jpg 320w, sertifikat ojm finalis.jpg 600w, sertifikat ojm finalis.jpg 1200w"
+     alt="sertifikat ojm finalis" class="Sertifikat ojm finalis" />
+            <p>Mikrotik and Networking Olympics finalist certificate</p>
+            <p>The Mikrotik Network Olympics (OJM) is a national level competition between SMK TKJ / SIJA students, which tests knowledge and skills in the world of networking.</p>
+          </div>
+          <div class="archived-item">
+            <img src="MTCNA.jpg"
+     srcset="MTCNA.jpg 320w, MTCNA.jpg 600w, MTCNA.jpg 1200w"
+     alt="MTCNA" class="Project 2" />
+            <p>Sertifikat MTCNA.</p>
+            <p>Mikrotik Certified Network Associate (MTCNA) is the first level certification offered by Mikrotik. It is designed for individuals who want to have expertise in configuring, managing, and troubleshooting networks using MikroTik RouterOS software and RouterBOARD hardware.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section animate" id="contact">  <h2>Contact Me</h2>
+        <div class="contact-card">
+          <div class="social-item">
+            <a href="mailto:andikamaulanasleman@gmail.com" class="social-link" target="_blank">
+              <i class="fas fa-envelope"></i>
+              <span>andikamaulanasleman@gmail.com</span>
+            </a>
+          </div>
+          <div class="social-item">
+            <a href="https://www.instagram.com/andhika_maulana11" class="social-link" target="_blank">
+              <i class="fab fa-instagram"></i>
+              <span>@andhika_maulana11</span>
+            </a>
+          </div>
+          <div class="social-item">
+            <a href="https://www.tiktok.com/@ndhikaa1117?_t=ZS-8wOvUvdTIMC&_r=1" class="social-link" target="_blank">
+              <i class="fab fa-tiktok"></i>
+              <span>@ndhikaa1117</span>
+            </a>
+          </div>
+          <div class="social-item">
+            <a href="https://youtube.com/@ndhik1117?si=pDVvI8gkuGOLuUYY" class="social-link" target="_blank">
+              <i class="fab fa-youtube"></i>
+              <span>@ndhik1117</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-icons">
+        <a href="https://www.instagram.com/andhika_maulana11" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@ndhikaa1117" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <a href="mailto:andikamaulanasleman@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://youtube.com/@ndhik1117" target="_blank"><i class="fab fa-youtube"></i></a>
+      </div>
+      <p>© 2025 Andhika Maulana Putra Riyantory. All rights reserved.</p>
+    </footer>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+
+</html>

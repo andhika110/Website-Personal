@@ -1,0 +1,208 @@
+/* styles2.css */
+
+/* Animasi Muncul Saat Scroll */
+.animate {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive Adjustments */
+
+/* Umum */
+@media (max-width: 600px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-cards {
+    flex-direction: column;
+  }
+
+  .social-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .social-link span {
+    font-size: 14px;
+  }
+}
+
+/* Home Section */
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column; /* Stack on smaller screens */
+    align-items: center;
+    text-align: center; /* Center text on smaller screens */
+  }
+
+  .profile-img {
+    width: 150px;
+    order: 0; /* Image on top on mobile */
+  }
+
+  .home-text-container {
+    order: 1; /* Text below image on mobile */
+  }
+
+  .home-title {
+    font-size: 2rem;
+  }
+
+  .home-subtitle {
+    font-size: 1.2rem;
+  }
+}
+
+/* Experience Section */
+@media (max-width: 768px) {
+  .experience-container {
+    flex-direction: column; /* Kotak menjadi tumpuk di layar kecil */
+    align-items: center;
+  }
+
+  .experience-box {
+    width: 90%;
+    min-width: auto;
+  }
+}
+
+/* Archived Section */
+@media (max-width: 768px) {
+  .archived-gallery {
+    flex-direction: column; /* Item menjadi tumpuk di layar kecil */
+    align-items: center;
+  }
+
+  .archived-item {
+    width: 90%;
+    max-width: none;
+  }
+}
+
+/* Tambahan Responsif Umum untuk HP Kecil */
+@media (max-width: 480px) {
+  .info-card {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .info-card i {
+    margin-top: 0;
+  }
+
+  .description-card {
+    text-align: center;
+  }
+
+  .description-header {
+    justify-content: center;
+  }
+
+  .home-title {
+    font-size: 1.8rem;
+  }
+
+  .home-subtitle {
+    font-size: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  /* Aturan CSS khusus untuk layar dengan lebar 320px atau kurang */
+  body {
+    font-size: 14px; /* Contoh: perkecil ukuran font */
+  }
+
+  .nama-anda {
+    font-size: 1.5em; /* Contoh: perkecil ukuran judul */
+  }
+
+  /* Sesuaikan elemen-elemen lain yang terlihat kurang optimal */
+}
+
+@media (max-width: 320px) {
+  body {
+    font-size: 14px;
+  }
+
+  .home-title {
+    font-size: 1.6rem; /* Ukuran judul di home */
+  }
+
+  .logo {
+    font-size: 18px; /* Ukuran logo */
+  }
+
+  .nav-links {
+    gap: 10px; /* Kurangi jarak antar link nav */
+  }
+
+  .nav-link {
+    font-size: 14px; /* Ukuran font link nav */
+  }
+
+  .home-subtitle {
+    font-size: 1rem; /* Ukuran subjudul di home */
+  }
+
+  .about-img {
+    width: 100%; /* Gambar about full width */
+  }
+
+  .info-card {
+    padding: 1rem; /* Kurangi padding kartu info */
+  }
+
+  .info-card h4 {
+    font-size: 0.9rem;
+  }
+
+  .info-card p {
+    font-size: 0.8rem;
+  }
+
+  .experience-box {
+    padding: 1rem;
+  }
+
+  .archived-item {
+    padding: 1rem;
+  }
+
+  .social-link span {
+    font-size: 12px;
+  }
+
+  .footer {
+    font-size: 14px;
+  }
+}
+
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Gelap transparan */
+    z-index: 10;
+    display: none;
+}
+
+.menu-overlay.active {
+    display: block;
+}
